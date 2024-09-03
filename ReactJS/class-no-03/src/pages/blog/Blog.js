@@ -1,5 +1,5 @@
 import blogObject from '../../components/blogObject/blogObject'
-
+impo
 export default function Blog(props){
     return(
         <div>

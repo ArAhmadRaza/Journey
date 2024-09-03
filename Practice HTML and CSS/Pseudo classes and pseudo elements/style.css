@@ -1,0 +1,75 @@
+p{
+    background-color: blue;
+    width: 250px;
+}
+
+p:hover{           /*this is called pseudo class*/
+    background-color: aqua;
+    width: 200px;
+}
+
+input:focus{
+    background-color: aqua;
+}
+
+
+a:visited{
+    color: red;
+    background-color: aqua;
+}
+
+h1:active{
+    color: aqua;
+    background-color: blue;
+}
+
+
+
+
+/* Pseudo Elements */
+h2::first-letter{
+    font-size: 100px;
+    color: blue;
+}
+
+p::first-letter{
+    font-size: 100px;
+}
+
+/* 
+h3::after{
+    content: "After";
+} */
+
+
+/* body::after{
+    content: "loremLorem ipsum, dolor sit amet consectetur adipisicing elit. Facere corrupti, alias aut corporis quae debitis reiciendis tempora sapiente voluptas, dignissimos maiores fugiat in culpa accusamus nobis quam quisquam atque beatae?";
+
+} */
+
+
+p:not(.para){
+background-color: dodgerblue;
+}
+
+
+
+div :nth-child(3){
+background-color: chartreuse;
+}
+
+div :nth-child(2){
+    background-color: crimson;
+    }
+
+
+div:has(h5){    /* Agr div ma h5 tag ha to is ko target kro*/
+    color: yellow;
+    font-size: 40px;
+}
+
+
+
+div:is(div, h5){
+    background-color: tomato;
+}  /*it's mean jis div tag ma div or h5 tag dono hn to pury div ko target kro*/

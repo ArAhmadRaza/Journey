@@ -1,0 +1,45 @@
+/* '*' is the universal selector */
+/* 'p(parent tag), b(child tag)' it's apply css to the child b tag which parent is p 
+it does'nt matter that its 1st child or 3rd chaild or any child but it must be child*/
+p b{
+    background-color: aqua;
+}
+
+div li {
+    color: yellow;
+}
+
+div p {
+    color: tomato;
+    background-color: chartreuse;
+}
+/* 'h1 > div'it's means that if div tag is the child tag of h1 then apply css on it 
+otherwise its not apllied. it is applied div tag is the 1st child */
+h1 > div{
+background-color: rebeccapurple;
+}
+
+/* ?+?  It's means if both are siblings(like header and body) tag
+ then css apply on just second tag */
+/* span + h3{
+    background-color: yellow;
+} */
+/* It is same like + */
+span ~ h3 {
+    background-color: yellow;
+}
+
+/* 
+it's means select that tag which has alt attribute on it 
+then apply css on it we can use here like div[id],div[class]...etc. */
+/* img[alt]{
+    width: 200px;
+} */
+
+/* WE CAN USE ALSO LIKE IT */
+img[alt ="Screenshot"]{
+    width: 200px;
+}
+
+
+
